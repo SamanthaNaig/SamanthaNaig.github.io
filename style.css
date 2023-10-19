@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+*{
+
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    background-color: #FEFAE0 ;
+}
+
+a{
+    text-decoration: none;
+
+}
+body{
+    font-family: 'Fira Code';
+    color: #B8712C;
+}
+
+nav {
+    /* max-width: 120000px; */
+    margin: auto;
+    /* border: 1px solid #1E2D3D; Add the 'solid' style and set the color */
+    padding: 17.6px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+/* .my-name{
+    max-width: 311px;
+} */
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #B8712C;
+}
+
+.link a::after{
+    content: "";
+    
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #93A168;
+    transition: all 0.25s ease;
+}
+
+.link a:hover::after{
+    width: 85%;
+}
+
+.right-nav{
+    margin-left: auto;
+}
+
+
+/* TODO: current btn is just words, change it to the icons */
+
+.btn:hover{
+    color: black;
+}
+.ri-mail-fill{
+    color: #9E5C1A;
+    font-size: 20px;
+}
+
+.ri.ri-mail-fill:hover{
+    opacity: 80%;
+}
+.ri-github-fill{
+    color: #9E5C1A;
+    font-size: 20px;
+}
+
+.ri-github-fill:hover{
+    opacity: 80%;
+}
+
+.container{
+    margin:auto;
+    padding-top: 20rem;
+    padding: 20rem 15rem;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    /* grid-template-columns: ; */
+}
+
+.hi-all{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.my-name{
+    color: #9E5C1A;
+    font-family: Fira Code;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.software-engineering-student{
+    color: #93A168;
+    font-family: Fira Code;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.complete-comment{
+    padding-top: 4rem;
+    color: #92835C;
+    font-family: Fira Code;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.github-link{
+    font-family: Fira Code;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    }
