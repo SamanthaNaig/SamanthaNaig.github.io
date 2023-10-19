@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@media print {
+    .pagebreak {
+        clear: both;
+        page-break-after: always;
+    }
+}
+
 
 *{
 
@@ -20,7 +27,7 @@ body{
 }
 
 nav {
-    /* max-width: 120000px; */
+    width: 100%;
     margin: auto;
     /* border: 1px solid #1E2D3D; Add the 'solid' style and set the color */
     padding: 17.6px 22px;
@@ -28,10 +35,14 @@ nav {
     align-items: center;
     justify-content: flex-start;
     gap: 2rem;
+    z-index: 10;
+    position: fixed;
+    top: 0; 
+    overflow: hidden;
 }
-/* .my-name{
+.my-name{
     max-width: 311px;
-} */
+}
 .nav-links{
     list-style: none;
     display: flex;
@@ -62,7 +73,10 @@ nav {
 }
 
 .right-nav{
+    /* position: fixed; */
     margin-left: auto;
+    /* right:0; */
+    /* top: 0; */
 }
 
 
@@ -88,18 +102,19 @@ nav {
     opacity: 80%;
 }
 
-.container{
-    margin:auto;
-    padding-top: 20rem;
-    padding: 20rem 15rem;
-}
-
 header{
     position: relative;
     padding-top: 2rem;
     display: grid;
     /* grid-template-columns: ; */
 }
+
+.container{
+    margin:auto;
+    padding-top: 20rem;
+    padding: 20rem 15rem;
+}
+
 
 .hi-all{
     font-size: 18px;
@@ -142,4 +157,53 @@ header{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    }
+}
+
+.pagebreak{
+    block-size: 360px;
+}
+
+.about-me .header{
+    color: #9E5C1A;
+    font-family: Fira Code;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-me ol{
+    list-style: none;
+    padding-top: 2rem;
+    padding-left: 3rem;
+}
+.about-me li::before{
+    content: counter(list-item)"\a0\a0";
+    color: #9E5C1A;
+    text-align: right;
+    font-family: Fira Code;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 150%; /* 27px */
+    margin-right: 2rem;
+}
+
+
+.about-me li{
+    color: #9E5C1A;
+    font-family: Fira Code;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 150%; /* 27px */
+}
+
+.projects .header{
+    color: #9E5C1A;
+    font-family: Fira Code;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
